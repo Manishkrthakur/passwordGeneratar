@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generetor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Gererator</h1>
+        <div>
+            <input type="text" class="passBox" id="passBox" disabled>
+            <img src="./img/copy.png" alt="" class="imcop" id="copyIcon">
+        </div>
+        <input type="range" min="1" max="30" value="8" id="inputSlider">
+         <div class="rap">
+            <p>Password size</p>
+            <span id="sliderValue"></span>
+         </div>
+
+         <div class="rap">
+            <label for="lowercase">Include Lowercase Letter (a-z)</label>
+            <input type="checkbox"class="lowercase" id="lowercase">
+         </div>
+         <div class="rap">
+            <label for="Uppercase">Include Uppercase Letter (A-Z)</label>
+            <input type="checkbox"class="Uppercase" id="Uppercase">
+         </div>
+         <div class="rap">
+            <label for="Number">Include Number  (0-9)</label>
+            <input type="checkbox"class="Number" id="Number">
+         </div>
+         <div class="rap">
+            <label for="Symbol">Include Symbol  (#$@)</label>
+            <input type="checkbox"class="Symbol" id="Symbol">
+         </div>
+
+         <button type="button" class="genBtn" id="genBtn">Gererator Password</button>
+    </div>
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
